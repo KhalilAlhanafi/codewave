@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nodemon --exec \"npx tsx server.ts\" --watch server.ts --watch src --ext ts,tsx,js,jsx",
     "build": "next build",
+    "export": "next build && next export",
     "start": "set NODE_ENV=production && npx tsx server.ts",
     "lint": "next lint",
     "db:push": "prisma db push",
