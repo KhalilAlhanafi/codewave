@@ -20,13 +20,6 @@ const nextConfig: NextConfig = {
     // 构建时忽略ESLint错误
     ignoreDuringBuilds: true,
   },
-  // ADD THESE LINES FOR GITHUB PAGES:
-  output: 'export',  // This is required for static export
-  trailingSlash: true,
-  images: {
-    unoptimized: true  // Required for static export
-  },
-  basePath: '/codewave', // Replace with your repository name
 };
 
 export default nextConfig;
