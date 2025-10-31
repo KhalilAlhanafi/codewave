@@ -23,31 +23,16 @@ import { Badge } from '@/components/ui/badge'
 
 const teamMembers = [
   {
-    name: 'Alex Chen',
+    name: 'Khalil Alhanafi',
     role: 'CEO & Lead Developer',
     image: '/api/placeholder/300/300',
     bio: 'Full-stack developer with 10+ years of experience in building scalable web applications.',
     skills: ['React', 'Node.js', 'Cloud Architecture'],
     social: { linkedin: '#', twitter: '#', github: '#' }
   },
+  
   {
-    name: 'Sarah Johnson',
-    role: 'UI/UX Designer',
-    image: '/api/placeholder/300/300',
-    bio: 'Creative designer passionate about creating intuitive and beautiful user experiences.',
-    skills: ['Figma', 'Adobe XD', 'Prototyping'],
-    social: { linkedin: '#', twitter: '#', github: '#' }
-  },
-  {
-    name: 'Mike Williams',
-    role: 'Mobile Developer',
-    image: '/api/placeholder/300/300',
-    bio: 'Expert in cross-platform mobile development with a focus on performance and UX.',
-    skills: ['React Native', 'Flutter', 'iOS/Android'],
-    social: { linkedin: '#', twitter: '#', github: '#' }
-  },
-  {
-    name: 'Emily Davis',
+    name: 'Ibrahim Lotfi',
     role: 'Backend Engineer',
     image: '/api/placeholder/300/300',
     bio: 'Specialized in building robust APIs and scalable cloud infrastructure.',
