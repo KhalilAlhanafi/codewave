@@ -27,7 +27,7 @@ const teamMembers = [
     role: 'CEO & Lead Developer',
     image: '/api/placeholder/300/300',
     bio: 'Full-stack developer with 10+ years of experience in building scalable web applications.',
-    skills: ['React', 'Node.js', 'Cloud Architecture'],
+    skills: ['React', 'Node.js', 'Cloud Architecture', 'Flutter'],
     social: { linkedin: '#', twitter: '#', github: '#' }
   },
   
@@ -35,8 +35,8 @@ const teamMembers = [
     name: 'Ibrahim Lotfi',
     role: 'Backend Engineer',
     image: '/api/placeholder/300/300',
-    bio: 'Specialized in building robust APIs and scalable cloud infrastructure.',
-    skills: ['Python', 'PostgreSQL', 'AWS'],
+    bio: 'Senior specialized in building robust APIs and scalable cloud infrastructure.',
+    skills: ['Php', 'PostgreSQL','Laravel', 'AWS'],
     social: { linkedin: '#', twitter: '#', github: '#' }
   }
 ]
