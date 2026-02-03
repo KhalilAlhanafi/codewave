@@ -51,11 +51,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="p-2 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                  </svg>
-                </div>
+                <img 
+                  src="/codewave-logo.png" 
+                  alt="CodeWave Logo" 
+                  className="w-10 h-10 object-contain"
+                />
                 <span className="text-xl font-bold text-white">
                   Code<span className="text-cyan-400">Wave</span>
                 </span>
@@ -88,7 +88,7 @@ export default function Home() {
             <div>
               <h4 className="text-white font-semibold mb-4">Connect</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="mailto:codewave@gmail.com.com" className="hover:text-cyan-400 transition-colors">hello@codewave.com</a></li>
+                <li><a href="mailto:codewave@gmail.com.com" className="hover:text-cyan-400 transition-colors">codeyourdreamswithwave@gmail.com</a></li>
                 <li><a href="tel:+963932534193" className="hover:text-cyan-400 transition-colors">+(963) 932534193</a></li>
                 <li><span className="hover:text-cyan-400 transition-colors">Damascus, Syria</span></li>
               </ul>
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="border-t border-slate-800 mt-8 pt-8 text-center">
             <p className="text-gray-400 text-sm">
               © 2025 CodeWave. All rights reserved. Built with passion and cutting-edge technology.
-            </p>y
+            </p>
           </div>
         </div>
       </footer>

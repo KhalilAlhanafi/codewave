@@ -193,7 +193,7 @@ export default function HeroSection() {
     <section
       id="home"
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-linear-to-br from-slate-900 via-blue-900 to-slate-900"
     >
       {/* Background Elements */}
       <ParticleBackground />
@@ -223,14 +223,14 @@ export default function HeroSection() {
 
         {/* Main Heading */}
         <motion.h1
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 sm:mb-8 mt-32 sm:mt-20"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
         >
           <span className="text-white">Building</span>
           <br />
-          <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">
             <motion.span
               key={currentWord}
               initial={{ opacity: 0, y: 20 }}
@@ -253,7 +253,7 @@ export default function HeroSection() {
           transition={{ delay: 0.6 }}
         >
           Transform your ideas into powerful digital experiences with our 
-          <span className="text-cyan-400 font-semibold"> premium full-stack development</span> 
+          <span className="text-cyan-400 font-semibold"> premium full-stack development </span> 
           services. We craft exceptional web and mobile applications that drive results.
         </motion.p>
 
@@ -267,7 +267,7 @@ export default function HeroSection() {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button 
               size="lg"
-              className="bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold px-8 py-4 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl text-lg"
+              className="bg-linear-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold px-8 py-4 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl text-lg"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Start Your Project
@@ -325,7 +325,7 @@ export default function HeroSection() {
               <Card className="bg-white/5 backdrop-blur-md border-white/10 hover:bg-white/10 transition-all duration-300">
                 <CardContent className="p-6 text-center">
                   <motion.div
-                    className="w-12 h-12 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center"
+                    className="w-12 h-12 mx-auto mb-4 bg-linear-to-r from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center"
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
                   >

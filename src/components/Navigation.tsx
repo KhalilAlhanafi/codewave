@@ -64,19 +64,23 @@ export default function Navigation() {
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
       >
-        <nav className="container mx-auto px-6 py-4">
+        <nav className="container mx-auto px-6 py-2">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <motion.div 
-              className="flex items-center space-x-2 cursor-pointer"
+              className="flex items-center cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection('#home')}
             >
-              <div className={`p-2 rounded-lg transition-colors ${
-                scrolled ? 'bg-gradient-to-r from-blue-500 to-cyan-400' : 'bg-white/20 backdrop-blur-sm'
-              }`}>
-                <Code className={`w-6 h-6 ${scrolled ? 'text-white' : 'text-white'}`} />
+              <div className="transition-colors">
+              <img 
+                src="/codewave-logo.png" 
+                alt="CodeWave Logo" 
+                className={`w-22 h-22 object-contain transition-colors ${
+                  scrolled ? '' : ''
+                }`}
+              />
               </div>
               <span className={`text-xl font-bold ${
                 scrolled ? 'text-gray-900 dark:text-white' : 'text-white'
@@ -110,7 +114,7 @@ export default function Navigation() {
                   {item.name}
                   {activeSection === item.href.slice(1) && (
                     <motion.div
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-blue-500 to-cyan-400"
                       layoutId="activeSection"
                       initial={false}
                       transition={{ type: "spring", stiffness: 300, damping: 30 }}
@@ -124,7 +128,7 @@ export default function Navigation() {
             <div className="hidden lg:flex items-center space-x-4">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button 
-                  className="bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold px-6 py-2 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="bg-linear-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold px-6 py-2 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl"
                   onClick={() => scrollToSection('#contact')}
                 >
                   Get Started
@@ -179,10 +183,12 @@ export default function Navigation() {
               <div className="flex flex-col h-full">
                 {/* Header */}
                 <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-slate-700">
-                  <div className="flex items-center space-x-2">
-                    <div className="p-2 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg">
-                      <Code className="w-6 h-6 text-white" />
-                    </div>
+                  <div className="flex items-center">
+                    <img 
+                      src="/codewave-logo.png" 
+                      alt="CodeWave Logo" 
+                      className="w-25 h-25 object-contain"
+                    />
                     <span className="text-xl font-bold text-gray-900 dark:text-white">
                       Code<span className="text-cyan-400">Wave</span>
                     </span>
@@ -232,7 +238,7 @@ export default function Navigation() {
                 {/* Footer */}
                 <div className="p-6 border-t border-gray-200 dark:border-slate-700">
                   <Button 
-                    className="w-full bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold py-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl"
+                    className="w-full bg-linear-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold py-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl"
                     onClick={() => scrollToSection('#contact')}
                   >
                     Get Started

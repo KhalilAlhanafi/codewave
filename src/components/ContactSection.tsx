@@ -26,7 +26,7 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'codewave@gmail.com',
+    value: 'codeyourdreamswithwave@gmail.com',
     href: 'mailto:codewave@gmail.com',
     color: 'from-blue-500 to-cyan-400'
   },

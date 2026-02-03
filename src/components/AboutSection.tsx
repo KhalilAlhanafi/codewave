@@ -26,16 +26,16 @@ const teamMembers = [
     name: 'Khalil Alhanafi',
     role: 'CEO & Lead Developer',
     image: '/api/placeholder/300/300',
-    bio: 'Full-stack developer with 10+ years of experience in building scalable web applications.',
+    bio: 'Full-stack developer with 5+ years of experience in building scalable web applications.',
     skills: ['React', 'Node.js', 'Cloud Architecture', 'Flutter'],
     social: { linkedin: '#', twitter: '#', github: '#' }
   },
   
   {
     name: 'Ibrahim Lotfi',
-    role: 'Backend Engineer',
+    role: 'CIO & DevOps Engineer',
     image: '/api/placeholder/300/300',
-    bio: 'Senior specialized in building robust APIs and scalable cloud infrastructure.',
+    bio: 'Senior with 5+ years of experience specialized in building robust APIs and scalable cloud infrastructure.',
     skills: ['Php', 'PostgreSQL','Laravel', 'AWS'],
     social: { linkedin: '#', twitter: '#', github: '#' }
   }
